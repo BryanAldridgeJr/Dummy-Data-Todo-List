@@ -6,12 +6,26 @@
     <title>Document</title>
 </head>
 <body>
+    <form id="filterForm">
+        User ID:
+        <input type="number" id="filterInput" placeholder="Number" min="1" max="10" />
+        <label for="completedCheckbox">Show Completed:</label>
+        <input type="checkbox" id="completedCheckbox">
+        <button type="submit" >Get Todos for ID</button>
+    </form>
+    
+    <br><br>
+    <br>
     <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
     <button onclick="populateTodos()">Populate Todos</button>
     <ol id="todo-list">
-    <!-- LIs will go here -->
+        
+    
     </ol>
+    <br>
+    <br>
+    <button onclick="clearTodos()">Clear</button>
 
     <script src="script.js"></script>
 </body>
